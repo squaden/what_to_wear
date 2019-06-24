@@ -12,7 +12,7 @@ class Garment
   def initialize(name, type, temperatures_range)
     @name = name
     @type = type
-    temperatures_range = temperatures_range
+    @temperatures_range = temperatures_range
   end
 
   def suits_for?(temperatures)
