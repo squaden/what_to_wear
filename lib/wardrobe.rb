@@ -10,9 +10,9 @@ class Wardrobe
     @garments = garments
   end
 
-  def for_temperatures!(user_input)
+  def for_temperature!(value)
     @garments.select! do |garment|
-      garment.suits_for?(user_input)
+      garment.suits_for?(value)
     end
   end
 
