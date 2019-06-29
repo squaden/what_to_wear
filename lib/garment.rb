@@ -15,8 +15,8 @@ class Garment
     @temperature_range = temperature_range
   end
 
-  def suits_for?(temperatures)
-    temperature_range.include?(temperatures)
+  def suits_for?(value)
+    temperature_range.include?(value)
   end
 
   def to_s

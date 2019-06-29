@@ -7,7 +7,7 @@ puts "Сколько градусов за окном? (можно с минус
 
 user_input = STDIN.gets.to_i
 
-wardrobe.for_temperature!(user_input)
+wardrobe.for_temperature(user_input)
 
 wardrobe.uniq_by_type!
 

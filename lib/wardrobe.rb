@@ -10,15 +10,15 @@ class Wardrobe
     @garments = garments
   end
 
-  def for_temperature!(value)
-    @garments.select! do |garment|
+  def for_temperature(value)
+    @garments_for_temp = @garments.select do |garment|
       garment.suits_for?(value)
     end
   end
 
   def uniq_by_type!
     @garments = types.map do |type|
-      @garments
+      @garments_for_temp
         .select { |garment| garment.type == type }
         .sample
      end
